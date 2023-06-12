@@ -110,6 +110,17 @@ body {
   }
 }
 
+@media screen and (max-width: 427px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .header-contact {
+    display: none;
+  }
+}
+
+
 .page-header-container {
   display: flex;
   align-items: center;
@@ -163,9 +174,6 @@ body {
   transition: background-color 250ms var(--cubic), border 250ms var(--cubic);
 }
 
-.mobile-menu-container {
-  position: relative;
-}
 
 /* .mobile-menu-close:hover,
 .mobile-menu-close:focus {
