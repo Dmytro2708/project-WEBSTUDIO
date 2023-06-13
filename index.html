@@ -39,7 +39,7 @@
             </li>
           </ul>
         </nav>
-        <button class="mobile-menu-open" type="button" data-menu-open>
+        <button class="mobile-menu-open js-open-menu" type="button" >
           <svg
             class="mobile-menu-open-icon"
             width="32"
@@ -65,8 +65,9 @@
         </address>
       </div>
 
-      <div class="mobile-menu container" data-menu>
-        <button class="mobile-menu-close" data-menu-close type="button">
+      <div class="mobile-menu  js-menu-container" >
+        <div class="mobile-menu-container container">
+          <button class="mobile-menu-close js-close-menu"  type="button">
           <svg class="mobile-menu-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -86,18 +87,20 @@
             </li>
           </ul>
         </address>
+        </div>
+        
       </div>
     </header>
 
     <main class="main-list">
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="features-section">
         <div class="features-container container">
           <h2 class="features visually-hidden">Features</h2>
