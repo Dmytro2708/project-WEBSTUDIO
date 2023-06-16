@@ -32,14 +32,16 @@
               <a class="text-nav link" href="./index.html">Studio</a>
             </li>
             <li class="nav-menu-item">
-              <a class="text-nav-activ link" href="./portfolio.html">Portfolio</a>
+              <a class="text-nav-activ link" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li class="nav-menu-item">
               <a class="text-nav link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
-        <button class="mobile-menu-open js-open-menu" type="button" >
+        <button class="mobile-menu-open js-open-menu" type="button">
           <svg
             class="mobile-menu-open-icon"
             width="32"
@@ -65,34 +67,49 @@
         </address>
       </div>
 
-      <div class="mobile-menu  js-menu-container" >
+      <div class="mobile-menu js-menu-container">
         <div class="mobile-menu-container container">
-          <button class="mobile-menu-close js-close-menu"  type="button">
-          <svg class="mobile-menu-close-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <ul class="mobile-menu-list list">
-          <li class="mobile-menu-item"><a class="mobile-menu-text link" href="./index.html">Studio</a></li>
-          <li class="mobile-menu-item"><a class="mobile-menu-text link" href="./portfolio.html">Portfolio</a></li>
-          <li class="mobile-menu-item"><a class="mobile-menu-text link" href="">Contacts</a></li>
-        </ul>
-        <address class="mobile-menu-contact-list list">
-          <ul>
-            <li class="mobile-menu-contact-item">
-              <a class="mobile-menu-contact-text link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <button class="mobile-menu-close js-close-menu" type="button">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-text link" href="./index.html">Studio</a>
             </li>
-            <li class="mobile-menu-contact-item">
-              <a class="mobile-menu-contact-text link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-text link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-text link" href="">Contacts</a>
             </li>
           </ul>
-        </address>
+          <address class="mobile-menu-contact-list list">
+            <ul>
+              <li class="mobile-menu-contact-item">
+                <a
+                  class="mobile-menu-contact-text link"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-contact-item">
+                <a
+                  class="mobile-menu-contact-text link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
-        
       </div>
     </header>
     <main>
-      <!-- <section class="section-portfolio">
+      <section class="section-portfolio">
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
           <ul class="portfolio-filter list">
@@ -116,11 +133,34 @@
             <li class="portfolio-box">
               <a class="portfolio-card link" href="">
                 <div class="box">
-                  <img
-                    src="./images/1project.jpg"
-                    alt="phone screen"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/1project.jpg    1x,
+                        ./images/1project@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/1project-tab.jpg    1x,
+                        ./images/1project-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/1project-mob.jpg    1x,
+                        ./images/1project-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/1project-mob.jpg    1x"
+                      alt="phone screen"
+                      width="396"
+                    />
+                  </picture>
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -139,11 +179,34 @@
             <li class="portfolio-box">
               <a class="portfolio-card link" href="">
                 <div class="box">
-                  <img
-                    src="./images/2project.jpg"
-                    alt="phone screen"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/2project.jpg    1x,
+                        ./images/2project@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/2project-tab.jpg    1x,
+                        ./images/2project-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/2project-mob.jpg    1x,
+                        ./images/2project-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/2project-mob.jpg    1x"
+                      alt="phone screen"
+                      width="396"
+                    />
+                  </picture>
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -159,11 +222,34 @@
             <li class="portfolio-box">
               <a class="portfolio-card link" href="">
                 <div class="box">
-                  <img
-                    src="./images/3project.jpg"
-                    alt="phone screen"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/3project.jpg    1x,
+                        ./images/3project@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/3project-tab.jpg    1x,
+                        ./images/3project-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/3project-mob.jpg    1x,
+                        ./images/3project-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/3project-mob.jpg    1x"
+                      alt="phone screen"
+                      width="396"
+                    />
+                  </picture>
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -179,11 +265,34 @@
             <li class="portfolio-box">
               <a class="portfolio-card link" href="">
                 <div class="box">
-                  <img
-                    src="./images/4project.jpg"
-                    alt="phone screen"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/4project.jpg    1x,
+                        ./images/4project@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/4project-tab.jpg    1x,
+                        ./images/4project-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/4project-mob.jpg    1x,
+                        ./images/4project-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/4project-mob.jpg    1x"
+                      alt="phone screen"
+                      width="396"
+                    />
+                  </picture>
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -199,11 +308,34 @@
             <li class="portfolio-box">
               <a class="portfolio-card link" href="">
                 <div class="box">
-                  <img
-                    src="./images/5project.jpg"
-                    alt="phone screen"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/5project.jpg    1x,
+                        ./images/5project@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/5project-tab.jpg    1x,
+                        ./images/5project-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/5project-mob.jpg    1x,
+                        ./images/5project-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/5project-mob.jpg    1x"
+                      alt="phone screen"
+                      width="396"
+                    />
+                  </picture>
 
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -220,11 +352,34 @@
             <li class="portfolio-box">
               <a class="portfolio-card link" href="">
                 <div class="box">
-                  <img
-                    src="./images/6project.jpg"
-                    alt="phone screen"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/6project.jpg    1x,
+                        ./images/6project@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/6project-tab.jpg    1x,
+                        ./images/6project-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/6project-mob.jpg    1x,
+                        ./images/6project-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/6project-mob.jpg    1x"
+                      alt="phone screen"
+                      width="396"
+                    />
+                  </picture>
 
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -241,11 +396,34 @@
             <li class="portfolio-box">
               <a class="portfolio-card link" href="">
                 <div class="box">
-                  <img
-                    src="./images/7project.jpg"
-                    alt="phone screen"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/7project.jpg    1x,
+                        ./images/7project@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/7project-tab.jpg    1x,
+                        ./images/7project-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/7project-mob.jpg    1x,
+                        ./images/7project-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/7project-mob.jpg    1x"
+                      alt="phone screen"
+                      width="396"
+                    />
+                  </picture>
 
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -262,11 +440,34 @@
             <li class="portfolio-box">
               <a class="portfolio-card link" href="">
                 <div class="box">
-                  <img
-                    src="./images/8project.jpg"
-                    alt="phone screen"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/8project.jpg    1x,
+                        ./images/8project@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/8project-tab.jpg    1x,
+                        ./images/8project-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/8project-mob.jpg    1x,
+                        ./images/8project-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/8project-mob.jpg    1x"
+                      alt="phone screen"
+                      width="396"
+                    />
+                  </picture>
 
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -283,11 +484,34 @@
             <li class="portfolio-box">
               <a class="portfolio-card link" href="">
                 <div class="box">
-                  <img
-                    src="./images/9project.jpg"
-                    alt="phone screen"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/9project.jpg    1x,
+                        ./images/9project@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/9project-tab.jpg    1x,
+                        ./images/9project-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/9project-mob.jpg    1x,
+                        ./images/9project-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/9project-mob.jpg    1x"
+                      alt="phone screen"
+                      width="396"
+                    />
+                  </picture>
 
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -303,7 +527,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <footer class="footer-content">
       <div class="footer-container container">
@@ -355,7 +579,7 @@
           <form class="footer-subscribe-form">
             <label class="footer-subscribe-label"
               ><input
-              name="user-email"
+                name="user-email"
                 type="email"
                 class="footer-subscribe-input"
                 placeholder="E-mail"
@@ -368,7 +592,6 @@
             </button>
           </form>
         </div>
-        
       </div>
     </footer>
 
